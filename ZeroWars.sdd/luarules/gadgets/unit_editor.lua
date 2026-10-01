@@ -72,7 +72,7 @@ end
 
 function UnitEditor.Scale(unit, increase)
     unit.scale = (unit.scale or 1) + increase
-    GG.UnitScale(unit.unitID, unit.scale)
+    GG.UnitModelRescale(unit.unitID, unit.scale)
 end
 
 function UnitEditor.IdleRegen(unit, regenTimeMulti, regenAmountMulti)
